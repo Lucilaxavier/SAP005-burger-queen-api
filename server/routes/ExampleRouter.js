@@ -1,9 +1,9 @@
 const { Router } = require('express')
-const ExampleController = require('../controller/ExampleController')
+const UserController = require('../controller/UserController')
 
 const router = Router()
 
 // aqui vai as requisições
-router.get("/", ExampleController.getAllExamples)
+router.get("/", UserController.getAllExamples)
 
 module.exports = router
